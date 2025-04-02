@@ -7,13 +7,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-//@Entity-->  indica que la clase es una entidad JPA.
+
 // Esto significa que la clase se mapeará a una tabla en la base de datos.
 @Getter //Genera automáticamente los métodos getter para todos los campos de la clase.
 @Setter //Genera automáticamente los métodos setter para todos los campos de la clase.
 @NoArgsConstructor // Genera un constructor vacío
 @AllArgsConstructor // Genera un constructor con todos los parámetros
-@Entity
+@Entity //@Entity-->  indica que la clase es una entidad JPA.
 public class Estudiante {
     @Id // Identificador único del estudiante, generado automáticamente
     /*@generateValues-> indica que el valor del campo anotado (en este caso, id)

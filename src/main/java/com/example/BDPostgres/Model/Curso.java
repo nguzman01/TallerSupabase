@@ -6,9 +6,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Set;//Importa la clase Set para manejar colecciones de inscripciones.
-@Getter
-@Setter
-@Entity
+@Getter //Genera automáticamente los métodos getter para todos los campos de la clase.
+@Setter //Genera automáticamente los métodos setter para todos los campos de la clase.
+@Entity //@Entity-->  indica que la clase es una entidad JPA.
 public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
